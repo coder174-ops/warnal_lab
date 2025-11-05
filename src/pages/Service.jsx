@@ -3,9 +3,9 @@ import { motion } from 'framer-motion';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
-import img1 from '../assets/service_photo1.jpg'; // Example image imports
-import img2 from '../assets/service_photo2.jpg';
-import img3 from '../assets/service_photo3.jpg';
+import img1 from '../assets/Service/service_photo1.jpg'; // Example image imports
+import img2 from '../assets/Service/service_photo2.jpg';
+import img3 from '../assets/Service/service_photo3.jpg';
 
 // Register the ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -62,7 +62,7 @@ const ServiceBox = ({ title, description, link, image }) => {
     <motion.div
       variants={itemVariants}
       // Outer container handles overall scale and shadow
-      className="bg-gray-900 rounded-lg shadow-xl border-t-4 border-[#3B82F6] transform-gpu transition-all duration-300
+      className="bg-[#1D2737] rounded-lg shadow-xl border-t-2 border-[#3B82F6] transform-gpu transition-all duration-300
                  flex flex-col justify-between h-full overflow-hidden" 
       
       // Apply overall scale effect to the container
@@ -111,7 +111,7 @@ const ServiceBox = ({ title, description, link, image }) => {
           <Link to={link}>
               <button
                   className="w-full px-6 py-3 mt-0 text-center font-semibold text-white bg-[#3B82F6] rounded-md transition duration-300 ease-in-out cursor-pointer
-                             hover:bg-blue-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:ring-opacity-50"
+                             hover:bg-[#2563EB] hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-[#3B82F6] focus:ring-opacity-50"
               >
                   Explore Service
               </button>

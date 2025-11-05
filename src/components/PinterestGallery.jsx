@@ -1,22 +1,27 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Heart, Download } from 'lucide-react';
+import img1 from '../assets/Gallery/img1.jpg';
+import img2 from '../assets/Gallery/img2.jpg';
+import img3 from '../assets/Gallery/img3.jpg';
+import img4 from '../assets/Gallery/img4.jpg';
+import img5 from '../assets/Gallery/img5.jpg';
+import img6 from '../assets/Gallery/img6.jpg';
+import img7 from '../assets/Gallery/img7.jpg';
+import img8 from '../assets/Gallery/img8.png';
 
 // --- Data Structure for Gallery Items ---
 const galleryItems = [
-    { id: 1, src: "https://picsum.photos/400/600?random=1", title: "Forest Retreat", category: "Nature" },
-    { id: 2, src: "https://picsum.photos/600/400?random=2", title: "City Lights", category: "Urban" },
-    { id: 3, src: "https://picsum.photos/400/550?random=3", title: "Abstract Art", category: "Art" },
-    { id: 4, src: "https://picsum.photos/400/450?random=4", title: "Coffee Break", category: "Lifestyle" },
-    { id: 5, src: "https://picsum.photos/400/500?random=5", title: "Mountain View", category: "Nature" },
-    { id: 6, src: "https://picsum.photos/400/700?random=6", title: "Minimal Decor", category: "Design" },
-    { id: 7, src: "https://picsum.photos/600/500?random=7", title: "Desert Landscape", category: "Nature" },
-    { id: 8, src: "https://plus.unsplash.com/premium_photo-1666863909125-3a01f038e71f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bGFuZHNjYXBlfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500", category: "Style" },
-    // Add more items for a full scrollable page experience
-    { id: 9, src: "https://picsum.photos/400/650?random=9", title: "Coastal Sunset", category: "Travel" },
-    { id: 10, src: "https://picsum.photos/400/400?random=10", title: "Geometric Shapes", category: "Abstract" },
-    { id: 11, src: "https://picsum.photos/400/520?random=11", title: "Book Nook", category: "Lifestyle" },
-      { id: 12, src: "https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500", category: "Style" },
+    { id: 1, src: img1, title: "img1", category: "Nature" },
+    { id: 2, src: img2, title: "img2", category: "Urban" },
+    { id: 3, src: img3, title: "img3", category: "Art" },
+    { id: 4, src: img4, title: "img4", category: "Lifestyle" },
+    { id: 5, src: img5, title: "img5", category: "Nature" },
+    { id: 6, src: img6, title: "img6", category: "Design" },
+    // { id: 7, src: img7, title: "Desert Landscape", category: "Nature" },
+    // { id: 8, src: img8, title: "Urban Jungle", category: "Urban" },
+    // { id: 11, src: "https://picsum.photos/400/520?random=11", title: "Book Nook", category: "Lifestyle" },
+    //   { id: 12, src: "https://plus.unsplash.com/premium_photo-1719943510748-4b4354fbcf56?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500", category: "Style" },
 ];
 
 // --- Sub-Component: Gallery Item ---
